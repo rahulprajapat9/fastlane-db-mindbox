@@ -1,0 +1,24 @@
+{
+  "src": "Frankenalle 111, Frankfurt",
+  "dst": "DB mindbox, Berlin" ,
+  "T1": {
+    "src": "Frankenalle 111, Frankfurt",
+    "dst": "Frankfurt Hbf",
+    "time": 23
+  },
+  "C1": {
+    "src": "Frankenalle 111, Frankfurt",
+    "dst": "Frankfurt Hbf",
+    "time": 16
+  },
+  "T2": {
+    "src": "Frankfurt Hbf",
+    "dst": "Berlin Hbf",
+    "time": 240
+  },
+  "C2": {
+    "src": "Frankfurt Hbf",
+    "dst": "Berlin Hbf",
+    "time": 270
+  }
+}
