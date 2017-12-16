@@ -1,0 +1,28 @@
+{
+  "src": "Frankenalle 111, Frankfurt",
+  "dst": "DB mindbox, Berlin" ,
+  "routes":[{
+    "medium": "train",
+    "src": "Frankenalle 111, Frankfurt",
+    "dst": "Frankfurt Hbf",
+    "time": 23
+  },
+  {
+    "medium": "car",
+    "src": "Frankenalle 111, Frankfurt",
+    "dst": "Frankfurt Hbf",
+    "time": 16
+  },
+  {
+    "medium": "train",
+    "src": "Frankfurt Hbf",
+    "dst": "Berlin Hbf",
+    "time": 240
+  },
+  {
+    "medium": "car",
+    "src": "Frankfurt Hbf",
+    "dst": "Berlin Hbf",
+    "time": 270
+  }
+}
