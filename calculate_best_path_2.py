@@ -1,9 +1,13 @@
 import time
 import json, pandas, numpy
+import sys
 from datetime import datetime
 
-with open("export.json") as json_data:
-    routes = json.load(json_data)
+#with open("../export.json") as json_data:
+#    routes = json.load(json_data)
+lines = sys.stdin.readlines()
+routes = json.loads(lines[0])
+routes = routes['train_route']
 
 routes = routes['train_route']
 
@@ -15,7 +19,7 @@ routes_df = routes_raw[['name','arrival','departure','drivingTimeFromPreviousSta
 
 # TO DO : handle src and dst NaN values properly
 
-routes_df.to_csv('output/export.csv', encoding='utf-8')
+# routes_df.to_csv('output/export.csv', encoding='utf-8')
 
 routes_df = routes_df.dropna()
 routes_df = routes_df.reset_index()
@@ -37,7 +41,7 @@ routes_df['medium'] = numpy.where(
     'train'
 )
 
-routes_df.to_csv('output/export.csv', encoding='utf-8')
+#routes_df.to_csv('output/export.csv', encoding='utf-8')
 
 convert_to_json = 1
 if convert_to_json:
@@ -54,6 +58,6 @@ if convert_to_json:
 
     print result_json
 
-    filename = 'output/best_path.json'
-    with open(filename, 'w') as outfile:
-        json.dump(result_json, outfile)
+#    filename = 'output/best_path.json'
+#    with open(filename, 'w') as outfile:
+#        json.dump(result_json, outfile)
