@@ -1,10 +1,11 @@
 const Promise = require('bluebird')
 const hafas = require('db-hafas')
 const _ = require('lodash')
-const got = require('got')
+const got = require('got-retry')
 const geolib = require('geolib')
 
 const google_key = 'AIzaSyD3f1jXRREEX4pSowzDvdQ-K6eJDYh6s6w'
+const db_key = 'Bearer 22f25a853aaa0539ba5a91f7363775f7'
 
 let pretty = (str) => console.log(JSON.stringify(str, null, 2))
 
@@ -24,26 +25,32 @@ let getStation = (location) => {
 }
 
 let getAvailableCars = (coordinates) => {
-  got.get(`https://api.deutschebahn.com/flinkster-api-ng/v1/bookingproposals?lat=${coordinates.latitude}&lon=${coordinates.longitude}&radius=2000&limit=10&providernetwork=1&expand=rentalobject`,
-    { json: true, headers: { 'Authorization': 'Bearer 22f25a853aaa0539ba5a91f7363775f7' } }).then(result => {
-      //return result.body.items
-      pretty(result.body)
-    }).catch(console.error)
+  /*return got.get(`https://api.deutschebahn.com/flinkster-api-ng/v1/bookingproposals?lat=${coordinates.latitude}&lon=${coordinates.longitude}&radius=2000&limit=10&providernetwork=1&expand=rentalobject`,
+    { json: true, headers: { 'Authorization': db_key }, retries: 100}).then(result => {
+      return result.body.items.map(item => {
+        got.get(item.price.href, { json: true, headers: { 'Authorization': db_key } }).then(price => {
+          item.price = price
+          return item
+        })
+      })
+    }).catch(console.error)*/
+    return null
 }
 
 let getTrainData = (start_station, end_station) => {
   return getSteps(start_station, end_station).then(result => {
-    let steps = result.map((step, index) => {
-      if (index > 0) {
-        return getCarDistance(result[index - 1].coordinates, step.coordinates).then(ret => {
-          step.drivingTimeFromPreviousStationInSeconds = ret.value
-          step.drivingTimeText = ret.text
-          //step.getAvailableCars = getAvailableCars(step.coordinates)
-          return step
-        })
+    let steps = Promise.resolve(result).map((step, index) => {
+      if (index <= 0) {
+        return step
       }
-      return step
-    })
+      return Promise.all([getCarDistance(result[index - 1].coordinates, step.coordinates),
+      getAvailableCars(step.coordinates)]).spread((distance, cars) => {
+        step.drivingTimeFromPreviousStationInSeconds = distance.value
+        step.drivingTimeText = distance.text
+        step.availableCars = cars
+        return step
+      })
+    }, {concurrency: 1})
     return Promise.all(steps)
   })
 }
@@ -86,7 +93,7 @@ let getCarDistance = (start, end) => {
   return got.get(`https://maps.googleapis.com/maps/api/distancematrix/json\?origins\=${start.latitude},${start.longitude}\&destinations=${end.latitude},${end.longitude}\&departure_time\=now\&key\=${google_key}`, {
     json: true
   }).then(result => {
-    return _.get(result.body, 'rows.0.elements[0].duration_in_traffic', null)
+    return _.get(result.body, 'rows.0.elements[0].duration', null)
   }).catch(console.error)
 }
 
