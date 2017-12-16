@@ -1,14 +1,14 @@
 import time
-import json, pandas, numpy
+import json, pandas, numpy, sys
 from datetime import datetime
 from pandas import Series
 
 #with open("../export.json") as json_data:
 #    routes = json.load(json_data)
 lines = sys.stdin.readlines()
-routes = json.loads(lines[0])
+routes_json = json.loads(lines[0])
 
-routes = routes['train_route']
+routes = routes_json['train_route']
 
 routes_raw = pandas.DataFrame.from_dict(routes, orient='columns', dtype=None)
 col_names = list(routes_raw)

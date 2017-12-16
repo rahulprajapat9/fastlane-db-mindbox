@@ -12,6 +12,6 @@ COPY server/* ./
 
 RUN npm install
 
-COPY calculate_best_path_2.py ./
+COPY calculate_best_path_3.py ./
 
 CMD [ "npm", "start" ]
