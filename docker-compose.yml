@@ -2,7 +2,7 @@ version: '3'
 services:
   fastlane:
     container_name: fastlane
-    image: fl3/fastlane
+    image: reg.beevelop.com/dbmindbox/fastlane-server:latest
     labels:
      - "traefik.enable=true"
      - "traefik.backend=hubanner"
