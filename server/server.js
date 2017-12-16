@@ -2,13 +2,15 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var url = require('url')
 
-var myPythonScriptPath = './calculate_best_path_3.py';
+var myPythonScriptPath = '../calculate_best_path_3.py';
 var PythonShell = require('python-shell');
 
 var Collector = require('./main');
 
 var app = express()
+var cors = require('cors')
 
+app.use(cors())
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
@@ -22,7 +24,11 @@ app.get('/route', function (req, res) {
 
 	var start = req.query.start
 	var destination = req.query.destination
-	var departure = req.query.departure
+    var departure = req.query.departure
+    
+    console.info(start)
+    console.info(destination)
+    console.info(departure)
 
     // getRawData("Bad Homburg", "Neubrandenburg", "now").then(result => pretty(result)).catch(console.error)
 
@@ -50,7 +56,8 @@ app.get('/route', function (req, res) {
                 console.log(err.message);
             };
 
-            res.json(bfr)
+            bfr = bfr.replace('NaN', 0)
+            res.json(JSON.parse(bfr))
     
             console.log('finished');
             // console.log(res);
@@ -60,7 +67,7 @@ app.get('/route', function (req, res) {
     // console.log(result);
 })
 
-app.get('/query', function (req, res) {
+app.get('/animation', function (req, res) {
 	console.log('Request for entry: ' + JSON.stringify(req.query));
 
 	var start = req.query.start
@@ -70,7 +77,7 @@ app.get('/query', function (req, res) {
     // getRawData("Bad Homburg", "Neubrandenburg", "now").then(result => pretty(result)).catch(console.error)
 
     Collector.getRawData(start, destination, departure).then(result => {
-        var pyshell = new PythonShell(myPythonScriptPath);
+        var pyshell = new PythonShell('../calc_animation.py');
         pyshell.send(JSON.stringify(result));
 
         let bfr = ''
@@ -86,7 +93,8 @@ app.get('/query', function (req, res) {
                 console.log(err.message);
             };
 
-            res.json(bfr)
+            bfr = bfr.replace('NaN', 0)
+            res.json(JSON.parse(bfr))
     
             console.log('finished');
             // console.log(res);
@@ -96,6 +104,6 @@ app.get('/query', function (req, res) {
     // console.log(result);
 })
 
-app.listen(8080, function () {
+app.listen(8085, function () {
   console.log('Example app listening on port ' + 8080)
 })
