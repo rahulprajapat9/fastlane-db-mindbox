@@ -1,808 +1,4 @@
 {
-  "origin": {
-    "type": "station",
-    "name": "Bad Homburg",
-    "coordinates": {
-      "latitude": 50.220009,
-      "longitude": 8.621347
-    },
-    "id": "8000712",
-    "products": {
-      "nationalExp": false,
-      "national": false,
-      "regionalExp": false,
-      "regional": true,
-      "suburban": true,
-      "bus": true,
-      "ferry": false,
-      "subway": false,
-      "tram": false,
-      "taxi": false
-    }
-  },
-  "destination": {
-    "type": "station",
-    "name": "Frankfurt Hbf (tief)",
-    "coordinates": {
-      "latitude": 50.107347,
-      "longitude": 8.662761
-    },
-    "id": "8098105",
-    "products": {
-      "nationalExp": true,
-      "national": true,
-      "regionalExp": false,
-      "regional": true,
-      "suburban": true,
-      "bus": true,
-      "ferry": false,
-      "subway": true,
-      "tram": true,
-      "taxi": false
-    }
-  },
-  "departure": "2017-12-16T12:30:00+01:00",
-  "arrival": "2017-12-16T12:51:00+01:00",
-  "id": "1|80105|1|81|16122017",
-  "line": {
-    "type": "line",
-    "name": "S 5",
-    "class": 16,
-    "productCode": 4,
-    "productName": "s",
-    "mode": "train",
-    "product": "suburban"
-  },
-  "direction": "Frankfurt(Main)Süd",
-  "departurePlatform": "2",
-  "arrivalPlatform": "101",
-  "passed": [
-    {
-      "station": {
-        "type": "station",
-        "name": "Bad Homburg",
-        "coordinates": {
-          "latitude": 50.220009,
-          "longitude": 8.621347
-        },
-        "id": "8000712",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "departure": "2017-12-16T12:30:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Oberursel(Taunus)",
-        "coordinates": {
-          "latitude": 50.198687,
-          "longitude": 8.587791
-        },
-        "id": "8004596",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": true,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T12:33:00+01:00",
-      "departure": "2017-12-16T12:34:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Oberursel-Stierstadt",
-        "coordinates": {
-          "latitude": 50.185203,
-          "longitude": 8.584788
-        },
-        "id": "8087064",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": false,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T12:36:00+01:00",
-      "departure": "2017-12-16T12:36:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "OberurselWeißkirchen/Steinbach",
-        "coordinates": {
-          "latitude": 50.173831,
-          "longitude": 8.586838
-        },
-        "id": "8006304",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": false,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T12:37:00+01:00",
-      "departure": "2017-12-16T12:38:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Frankfurt-Rödelheim",
-        "coordinates": {
-          "latitude": 50.124517,
-          "longitude": 8.607028
-        },
-        "id": "8002052",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T12:42:00+01:00",
-      "departure": "2017-12-16T12:42:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Frankfurt(Main)West",
-        "coordinates": {
-          "latitude": 50.119204,
-          "longitude": 8.639326
-        },
-        "id": "8002042",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T12:45:00+01:00",
-      "departure": "2017-12-16T12:45:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Frankfurt(Main)Messe",
-        "coordinates": {
-          "latitude": 50.112013,
-          "longitude": 8.643434
-        },
-        "id": "8079632",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": false,
-          "suburban": true,
-          "bus": false,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T12:47:00+01:00",
-      "departure": "2017-12-16T12:47:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Frankfurt(M)Galluswarte",
-        "coordinates": {
-          "latitude": 50.104767,
-          "longitude": 8.644
-        },
-        "id": "8006690",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": false,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T12:48:00+01:00",
-      "departure": "2017-12-16T12:49:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Frankfurt Hbf (tief)",
-        "coordinates": {
-          "latitude": 50.107347,
-          "longitude": 8.662761
-        },
-        "id": "8098105",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": true,
-          "tram": true,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T12:51:00+01:00",
-      "departure": "2017-12-16T12:52:00+01:00"
-    }
-  ]
-}
-{
-  "origin": {
-    "type": "station",
-    "name": "Frankfurt(Main)Hbf",
-    "coordinates": {
-      "latitude": 50.106817,
-      "longitude": 8.662994
-    },
-    "id": "8000105",
-    "products": {
-      "nationalExp": true,
-      "national": true,
-      "regionalExp": false,
-      "regional": true,
-      "suburban": true,
-      "bus": true,
-      "ferry": false,
-      "subway": true,
-      "tram": true,
-      "taxi": false
-    }
-  },
-  "destination": {
-    "type": "station",
-    "name": "Berlin Hbf (tief)",
-    "coordinates": {
-      "latitude": 52.52585,
-      "longitude": 13.368883
-    },
-    "id": "8098160",
-    "products": {
-      "nationalExp": true,
-      "national": true,
-      "regionalExp": true,
-      "regional": true,
-      "suburban": true,
-      "bus": true,
-      "ferry": false,
-      "subway": true,
-      "tram": true,
-      "taxi": false
-    }
-  },
-  "departure": "2017-12-16T13:02:00+01:00",
-  "arrival": "2017-12-16T16:58:00+01:00",
-  "id": "1|68490|0|81|16122017",
-  "line": {
-    "type": "line",
-    "name": "ICE 1539",
-    "class": 1,
-    "productCode": 0,
-    "productName": "ICE",
-    "mode": "train",
-    "product": "nationalExp"
-  },
-  "direction": "Berlin Hbf (tief)",
-  "departurePlatform": "13",
-  "arrivalPlatform": "7",
-  "passed": [
-    {
-      "station": {
-        "type": "station",
-        "name": "Frankfurt(Main)Hbf",
-        "coordinates": {
-          "latitude": 50.106817,
-          "longitude": 8.662994
-        },
-        "id": "8000105",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": true,
-          "tram": true,
-          "taxi": false
-        }
-      },
-      "departure": "2017-12-16T13:02:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Erfurt Hbf",
-        "coordinates": {
-          "latitude": 50.972244,
-          "longitude": 11.038178
-        },
-        "id": "8010101",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": true,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T15:07:00+01:00",
-      "departure": "2017-12-16T15:09:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Halle(Saale)Hbf",
-        "coordinates": {
-          "latitude": 51.477087,
-          "longitude": 11.986999
-        },
-        "id": "8010159",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": true,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": true
-        }
-      },
-      "arrival": "2017-12-16T15:43:00+01:00",
-      "departure": "2017-12-16T15:45:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Berlin Südkreuz",
-        "coordinates": {
-          "latitude": 52.47623,
-          "longitude": 13.365854
-        },
-        "id": "8011113",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T16:51:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Berlin Hbf (tief)",
-        "coordinates": {
-          "latitude": 52.52585,
-          "longitude": 13.368883
-        },
-        "id": "8098160",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": true,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": true,
-          "tram": true,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T16:58:00+01:00"
-    }
-  ]
-}
-{
-  "origin": {
-    "type": "station",
-    "name": "Berlin Hbf (tief)",
-    "coordinates": {
-      "latitude": 52.52585,
-      "longitude": 13.368883
-    },
-    "id": "8098160",
-    "products": {
-      "nationalExp": true,
-      "national": true,
-      "regionalExp": true,
-      "regional": true,
-      "suburban": true,
-      "bus": true,
-      "ferry": false,
-      "subway": true,
-      "tram": true,
-      "taxi": false
-    }
-  },
-  "destination": {
-    "type": "station",
-    "name": "Neubrandenburg",
-    "coordinates": {
-      "latitude": 53.561893,
-      "longitude": 13.261381
-    },
-    "id": "8010241",
-    "products": {
-      "nationalExp": false,
-      "national": false,
-      "regionalExp": false,
-      "regional": true,
-      "suburban": false,
-      "bus": true,
-      "ferry": false,
-      "subway": false,
-      "tram": false,
-      "taxi": true
-    }
-  },
-  "departure": "2017-12-16T17:42:00+01:00",
-  "arrival": "2017-12-16T19:30:00+01:00",
-  "id": "1|72547|0|81|16122017",
-  "line": {
-    "type": "line",
-    "name": "RE 3516",
-    "class": 8,
-    "productCode": 3,
-    "productName": "RE",
-    "mode": "train",
-    "product": "regional"
-  },
-  "direction": "Stralsund Hbf",
-  "departurePlatform": "5",
-  "arrivalPlatform": "1",
-  "passed": [
-    {
-      "station": {
-        "type": "station",
-        "name": "Berlin Hbf (tief)",
-        "coordinates": {
-          "latitude": 52.52585,
-          "longitude": 13.368883
-        },
-        "id": "8098160",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": true,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": true,
-          "tram": true,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T17:40:00+01:00",
-      "departure": "2017-12-16T17:42:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Berlin Gesundbrunnen",
-        "coordinates": {
-          "latitude": 52.548656,
-          "longitude": 13.39106
-        },
-        "id": "8011102",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": true,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T17:46:00+01:00",
-      "departure": "2017-12-16T17:49:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Oranienburg",
-        "coordinates": {
-          "latitude": 52.754697,
-          "longitude": 13.249084
-        },
-        "id": "8013487",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T18:10:00+01:00",
-      "departure": "2017-12-16T18:11:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Löwenberg(Mark)",
-        "coordinates": {
-          "latitude": 52.89679,
-          "longitude": 13.190025
-        },
-        "id": "8010214",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T18:23:00+01:00",
-      "departure": "2017-12-16T18:24:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Gransee",
-        "coordinates": {
-          "latitude": 53.001056,
-          "longitude": 13.16712
-        },
-        "id": "8011691",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T18:32:00+01:00",
-      "departure": "2017-12-16T18:33:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Fürstenberg(Havel)",
-        "coordinates": {
-          "latitude": 53.186791,
-          "longitude": 13.139371
-        },
-        "id": "8010399",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": true
-        }
-      },
-      "arrival": "2017-12-16T18:45:00+01:00",
-      "departure": "2017-12-16T18:46:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Neustrelitz Hbf",
-        "coordinates": {
-          "latitude": 53.359249,
-          "longitude": 13.074523
-        },
-        "id": "8010250",
-        "products": {
-          "nationalExp": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T18:57:00+01:00",
-      "departure": "2017-12-16T19:01:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Blankensee(Meckl)",
-        "coordinates": {
-          "latitude": 53.408141,
-          "longitude": 13.26299
-        },
-        "id": "8011205",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": false,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T19:11:00+01:00",
-      "departure": "2017-12-16T19:11:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Cammin(Meckl)",
-        "coordinates": {
-          "latitude": 53.438983,
-          "longitude": 13.299765
-        },
-        "id": "8011307",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": false,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T19:15:00+01:00",
-      "departure": "2017-12-16T19:15:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Burg Stargard(Meckl)",
-        "coordinates": {
-          "latitude": 53.499562,
-          "longitude": 13.303127
-        },
-        "id": "8011293",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": false,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      },
-      "arrival": "2017-12-16T19:22:00+01:00",
-      "departure": "2017-12-16T19:22:00+01:00"
-    },
-    {
-      "station": {
-        "type": "station",
-        "name": "Neubrandenburg",
-        "coordinates": {
-          "latitude": 53.561893,
-          "longitude": 13.261381
-        },
-        "id": "8010241",
-        "products": {
-          "nationalExp": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": true
-        }
-      },
-      "arrival": "2017-12-16T19:30:00+01:00",
-      "departure": "2017-12-16T19:31:00+01:00"
-    }
-  ]
-}
-{
   "train_route": [
     {
       "name": "Bad Homburg",
@@ -832,7 +28,7 @@
       },
       "arrival": "2017-12-16T12:36:00+01:00",
       "departure": "2017-12-16T12:36:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 360,
+      "drivingTimeFromPreviousStationInSeconds": 363,
       "drivingTimeText": "6 mins",
       "availableCars": null
     },
@@ -844,7 +40,7 @@
       },
       "arrival": "2017-12-16T12:37:00+01:00",
       "departure": "2017-12-16T12:38:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 184,
+      "drivingTimeFromPreviousStationInSeconds": 183,
       "drivingTimeText": "3 mins",
       "availableCars": null
     },
@@ -856,7 +52,7 @@
       },
       "arrival": "2017-12-16T12:42:00+01:00",
       "departure": "2017-12-16T12:42:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 773,
+      "drivingTimeFromPreviousStationInSeconds": 769,
       "drivingTimeText": "13 mins",
       "availableCars": null
     },
@@ -868,7 +64,7 @@
       },
       "arrival": "2017-12-16T12:45:00+01:00",
       "departure": "2017-12-16T12:45:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 618,
+      "drivingTimeFromPreviousStationInSeconds": 610,
       "drivingTimeText": "10 mins",
       "availableCars": null
     },
@@ -880,7 +76,7 @@
       },
       "arrival": "2017-12-16T12:47:00+01:00",
       "departure": "2017-12-16T12:47:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 116,
+      "drivingTimeFromPreviousStationInSeconds": 121,
       "drivingTimeText": "2 mins",
       "availableCars": null
     },
@@ -892,7 +88,7 @@
       },
       "arrival": "2017-12-16T12:48:00+01:00",
       "departure": "2017-12-16T12:49:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 206,
+      "drivingTimeFromPreviousStationInSeconds": 192,
       "drivingTimeText": "3 mins",
       "availableCars": null
     },
@@ -927,7 +123,7 @@
       },
       "arrival": "2017-12-16T15:07:00+01:00",
       "departure": "2017-12-16T15:09:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 8117,
+      "drivingTimeFromPreviousStationInSeconds": 8111,
       "drivingTimeText": "2 hours 15 mins",
       "availableCars": null
     },
@@ -939,7 +135,7 @@
       },
       "arrival": "2017-12-16T15:43:00+01:00",
       "departure": "2017-12-16T15:45:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 4281,
+      "drivingTimeFromPreviousStationInSeconds": 4282,
       "drivingTimeText": "1 hour 11 mins",
       "availableCars": null
     },
@@ -950,8 +146,8 @@
         "longitude": 13.365854
       },
       "arrival": "2017-12-16T16:51:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 6220,
-      "drivingTimeText": "1 hour 44 mins",
+      "drivingTimeFromPreviousStationInSeconds": 6197,
+      "drivingTimeText": "1 hour 43 mins",
       "availableCars": null
     },
     {
@@ -961,7 +157,7 @@
         "longitude": 13.368883
       },
       "arrival": "2017-12-16T16:58:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 747,
+      "drivingTimeFromPreviousStationInSeconds": 748,
       "drivingTimeText": "12 mins",
       "availableCars": null
     },
@@ -973,7 +169,7 @@
       },
       "arrival": "2017-12-16T17:46:00+01:00",
       "departure": "2017-12-16T17:49:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 550,
+      "drivingTimeFromPreviousStationInSeconds": 547,
       "drivingTimeText": "9 mins",
       "availableCars": null
     },
@@ -985,7 +181,7 @@
       },
       "arrival": "2017-12-16T18:10:00+01:00",
       "departure": "2017-12-16T18:11:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 2098,
+      "drivingTimeFromPreviousStationInSeconds": 2096,
       "drivingTimeText": "35 mins",
       "availableCars": null
     },
@@ -997,7 +193,7 @@
       },
       "arrival": "2017-12-16T18:23:00+01:00",
       "departure": "2017-12-16T18:24:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1476,
+      "drivingTimeFromPreviousStationInSeconds": 1480,
       "drivingTimeText": "25 mins",
       "availableCars": null
     },
@@ -1009,7 +205,7 @@
       },
       "arrival": "2017-12-16T18:32:00+01:00",
       "departure": "2017-12-16T18:33:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 946,
+      "drivingTimeFromPreviousStationInSeconds": 944,
       "drivingTimeText": "16 mins",
       "availableCars": null
     },
@@ -1033,7 +229,7 @@
       },
       "arrival": "2017-12-16T18:57:00+01:00",
       "departure": "2017-12-16T19:01:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1251,
+      "drivingTimeFromPreviousStationInSeconds": 1252,
       "drivingTimeText": "21 mins",
       "availableCars": null
     },
@@ -1045,7 +241,7 @@
       },
       "arrival": "2017-12-16T19:11:00+01:00",
       "departure": "2017-12-16T19:11:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1374,
+      "drivingTimeFromPreviousStationInSeconds": 1370,
       "drivingTimeText": "23 mins",
       "availableCars": null
     },
@@ -1081,7 +277,7 @@
       },
       "arrival": "2017-12-16T19:30:00+01:00",
       "departure": "2017-12-16T19:31:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 656,
+      "drivingTimeFromPreviousStationInSeconds": 676,
       "drivingTimeText": "11 mins",
       "availableCars": null
     }
