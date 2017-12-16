@@ -89,10 +89,12 @@ let getCarData = (journey) => {
 
 
 let aggregate = (start, end, departure_time) => {
+  console.log(departure_time)
+
   return hafas.journeys(start.id, end.id, {
     passedStations: true,
     results: 10,
-    when: moment(departure_time).toDate(),
+    when: moment.unix(departure_time).toDate(),
     transfers: 20
   }).then(result => {
     let journey = result[0]
