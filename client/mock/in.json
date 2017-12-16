@@ -1,0 +1,18 @@
+{
+  "totalResults":3,
+  "src": "Frankenalle 111, Frankfurt",
+  "dst": "DB mindbox, Berlin" ,
+  "routes":[{
+    "totalTime": 10,
+    "connections": 2,
+    "steps": [{
+      "src": "Frankenalle 111, Frankfurt",
+      "dst": "Frankfurt Hbf",
+      "time": 16
+    },{
+      "src": "Frankfurt Hbf",
+      "dst": "Berlin Hbf",
+      "time": 240
+    }]
+  }]
+}
