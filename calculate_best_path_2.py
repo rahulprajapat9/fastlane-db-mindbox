@@ -49,9 +49,15 @@ if convert_to_json:
     for i in range(routes_df.shape[0]):
         row = routes_df.iloc[i]
         newRow = {
-            "lat": row['latitude'],
-            "long": row['longitude'],
-            "time": row['train_duration'],
+            "name":row['name'],
+            "coordinates":{
+                "lat": row['latitude'],
+                "long": row['longitude'],
+            },
+            "time":{
+                "departure":row['departure'],
+                "arrival":row['arrival'],
+            },
             "medium": row['medium'],
         }
         result_json.append(newRow)
