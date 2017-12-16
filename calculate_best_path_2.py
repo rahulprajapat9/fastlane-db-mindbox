@@ -38,3 +38,23 @@ routes_df['medium'] = numpy.where(
 )
 
 routes_df.to_csv('output/export.csv', encoding='utf-8')
+
+convert_to_json = 1
+if convert_to_json:
+    result_json = []
+    for i in range(routes_df.shape[0]):
+        row = routes_df.iloc[i]
+        newRow = {
+            "lat": row['latitude'],
+            "long": row['longitude'],
+            "time": row['train_duration'],
+            "medium": row['medium'],
+
+        }
+        result_json.append(newRow)
+
+    print result_json
+
+    filename = 'output/best_path.json'
+    with open(filename, 'w') as outfile:
+        json.dump(result_json, outfile)
