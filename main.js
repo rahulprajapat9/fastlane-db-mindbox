@@ -23,6 +23,10 @@ let getStation = (location) => {
   }).then(result => result[0])
 }
 
+let getAvailableCars = (coordinates) => {
+
+}
+
 got.get(`https://maps.googleapis.com/maps/api/directions/json\?origin\=Bad+Homburg\&destination\=Neubrandenburg\&transit_mode\=train\&mode\=transit\&key\=${google_key}`, {
     json: true
   })
@@ -42,9 +46,29 @@ got.get(`https://maps.googleapis.com/maps/api/directions/json\?origin\=Bad+Hombu
     })
   }).then(stations => {
     getSteps(stations.start_station, stations.end_station).then(result => {
-      pretty(result)
-    })
+      let steps = result.map((step, index) => {
+        if (index > 0) {
+          return getCarDistance(result[index - 1].coordinates, step.coordinates).then(ret => {
+            step.drivingTimeFromPreviousStationInSeconds = ret.value
+            step.drivingTimeText = ret.text
+            return step
+          })
+        }
+        return step
+      })
+      
+      return Promise.all(steps)
+    }).then(result => pretty(result))
   }).catch(console.error)
+
+
+let getCarDistance = (start, end) => {
+  return got.get(`https://maps.googleapis.com/maps/api/distancematrix/json\?origins\=${start.latitude},${start.longitude}\&destinations=${end.latitude},${end.longitude}\&departure_time\=now\&key\=${google_key}`, {
+    json: true
+  }).then(result => {
+    return _.get(result.body, 'rows.0.elements[0].duration_in_traffic', null)
+  }).catch(console.error)
+}
 
 let getSteps = (start, end) => {
   return hafas.journeys(start.id, end.id, {
@@ -64,8 +88,8 @@ let getSteps = (start, end) => {
         })
       })
     }).then(result => {
-      return _(result).flattenDeep().uniqBy('coordinates') 
-    })  
+      return _(result).flattenDeep().uniqBy('coordinates').value()
+    })
 }
 
 //.then((output) => console.log(JSON.stringify(output, null, 2)))
