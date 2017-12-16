@@ -154,7 +154,7 @@ if convert_to_json:
         }
         result_json.append(newRow)
 
-    print(result_json)
+    print json.dumps(result_json)
 
 #    filename = 'output/best_path_combined.json'
 #    with open(filename, 'w') as outfile:
