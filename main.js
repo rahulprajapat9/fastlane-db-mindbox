@@ -75,7 +75,6 @@ let getCarData = (journey) => {
     return geolib.getDistance(part.origin.coordinates, part.destination.coordinates) > 2000
   })
   return Promise.resolve(pairs).map(part => {
-    pretty(part)
     return getCarRoute(part.origin.coordinates, part.destination.coordinates,
     moment(part.departure).unix()).then(route => {
       let carRoute = {
