@@ -1,0 +1,5 @@
+,index,name,arrival,departure,drivingTimeFromPreviousStationInSeconds,latitude,longitude,train_duration,medium,from,to,text,value
+0,0,Bad Homburg,2017-12-16T12:30:00+01:00,2017-12-16T12:30:00+01:00,0.0,50.220009,8.621347,1920,car,Bad Homburg,Frankfurt Hbf (tief),18 mins,1065.0
+1,9,Frankfurt(Main)Hbf,2017-12-16T13:02:00+01:00,2017-12-16T13:02:00+01:00,2.0,50.106817,8.662994,14160,train,Frankfurt(Main)Hbf,Berlin Hbf (tief),4 hours 41 mins,16876.0
+2,13,Berlin Hbf (tief),2017-12-16T16:58:00+01:00,2017-12-16T16:58:00+01:00,748.0,52.52585,13.368883,9120,car,Berlin Hbf (tief),Neubrandenburg,1 hour 46 mins,6367.0
+3,23,Neubrandenburg,2017-12-16T19:30:00+01:00,2017-12-16T19:31:00+01:00,676.0,53.561893,13.261381,480,train,,,,
