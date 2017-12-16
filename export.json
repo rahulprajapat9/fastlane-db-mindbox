@@ -17,8 +17,8 @@
       },
       "arrival": "2017-12-16T04:18:00+01:00",
       "departure": "2017-12-16T04:19:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 519,
-      "drivingTimeText": "9 mins",
+      "drivingTimeFromPreviousStationInSeconds": 455,
+      "drivingTimeText": "8 mins",
       "availableCars": null
     },
     {
@@ -29,8 +29,8 @@
       },
       "arrival": "2017-12-16T04:21:00+01:00",
       "departure": "2017-12-16T04:21:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 367,
-      "drivingTimeText": "6 mins",
+      "drivingTimeFromPreviousStationInSeconds": 329,
+      "drivingTimeText": "5 mins",
       "availableCars": null
     },
     {
@@ -41,7 +41,7 @@
       },
       "arrival": "2017-12-16T04:22:00+01:00",
       "departure": "2017-12-16T04:23:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 185,
+      "drivingTimeFromPreviousStationInSeconds": 184,
       "drivingTimeText": "3 mins",
       "availableCars": null
     },
@@ -53,8 +53,8 @@
       },
       "arrival": "2017-12-16T04:27:00+01:00",
       "departure": "2017-12-16T04:27:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 851,
-      "drivingTimeText": "14 mins",
+      "drivingTimeFromPreviousStationInSeconds": 707,
+      "drivingTimeText": "12 mins",
       "availableCars": null
     },
     {
@@ -65,8 +65,8 @@
       },
       "arrival": "2017-12-16T04:30:00+01:00",
       "departure": "2017-12-16T04:30:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 677,
-      "drivingTimeText": "11 mins",
+      "drivingTimeFromPreviousStationInSeconds": 605,
+      "drivingTimeText": "10 mins",
       "availableCars": null
     },
     {
@@ -77,8 +77,8 @@
       },
       "arrival": "2017-12-16T04:32:00+01:00",
       "departure": "2017-12-16T04:32:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 161,
-      "drivingTimeText": "3 mins",
+      "drivingTimeFromPreviousStationInSeconds": 133,
+      "drivingTimeText": "2 mins",
       "availableCars": null
     },
     {
@@ -89,8 +89,8 @@
       },
       "arrival": "2017-12-16T04:33:00+01:00",
       "departure": "2017-12-16T04:34:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 240,
-      "drivingTimeText": "4 mins",
+      "drivingTimeFromPreviousStationInSeconds": 165,
+      "drivingTimeText": "3 mins",
       "availableCars": null
     },
     {
@@ -101,8 +101,8 @@
       },
       "arrival": "2017-12-16T04:36:00+01:00",
       "departure": "2017-12-16T04:37:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 373,
-      "drivingTimeText": "6 mins",
+      "drivingTimeFromPreviousStationInSeconds": 211,
+      "drivingTimeText": "4 mins",
       "availableCars": null
     },
     {
@@ -124,8 +124,8 @@
       },
       "arrival": "2017-12-16T05:20:00+01:00",
       "departure": "2017-12-16T05:21:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1887,
-      "drivingTimeText": "31 mins",
+      "drivingTimeFromPreviousStationInSeconds": 1600,
+      "drivingTimeText": "27 mins",
       "availableCars": null
     },
     {
@@ -136,8 +136,8 @@
       },
       "arrival": "2017-12-16T06:02:00+01:00",
       "departure": "2017-12-16T06:04:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 3269,
-      "drivingTimeText": "54 mins",
+      "drivingTimeFromPreviousStationInSeconds": 3175,
+      "drivingTimeText": "53 mins",
       "availableCars": null
     },
     {
@@ -148,8 +148,8 @@
       },
       "arrival": "2017-12-16T06:34:00+01:00",
       "departure": "2017-12-16T06:36:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 4687,
-      "drivingTimeText": "1 hour 18 mins",
+      "drivingTimeFromPreviousStationInSeconds": 4400,
+      "drivingTimeText": "1 hour 13 mins",
       "availableCars": null
     },
     {
@@ -160,8 +160,8 @@
       },
       "arrival": "2017-12-16T06:54:00+01:00",
       "departure": "2017-12-16T06:55:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 3226,
-      "drivingTimeText": "54 mins",
+      "drivingTimeFromPreviousStationInSeconds": 2674,
+      "drivingTimeText": "45 mins",
       "availableCars": null
     },
     {
@@ -172,8 +172,8 @@
       },
       "arrival": "2017-12-16T07:35:00+01:00",
       "departure": "2017-12-16T07:37:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 3839,
-      "drivingTimeText": "1 hour 4 mins",
+      "drivingTimeFromPreviousStationInSeconds": 3667,
+      "drivingTimeText": "1 hour 1 min",
       "availableCars": null
     },
     {
@@ -184,8 +184,8 @@
       },
       "arrival": "2017-12-16T07:59:00+01:00",
       "departure": "2017-12-16T08:01:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 2554,
-      "drivingTimeText": "43 mins",
+      "drivingTimeFromPreviousStationInSeconds": 2378,
+      "drivingTimeText": "40 mins",
       "availableCars": null
     },
     {
@@ -196,8 +196,8 @@
       },
       "arrival": "2017-12-16T08:17:00+01:00",
       "departure": "2017-12-16T08:19:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1852,
-      "drivingTimeText": "31 mins",
+      "drivingTimeFromPreviousStationInSeconds": 1707,
+      "drivingTimeText": "28 mins",
       "availableCars": null
     },
     {
@@ -207,8 +207,8 @@
         "longitude": 13.200965
       },
       "arrival": "2017-12-16T09:12:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 8134,
-      "drivingTimeText": "2 hours 16 mins",
+      "drivingTimeFromPreviousStationInSeconds": 7394,
+      "drivingTimeText": "2 hours 3 mins",
       "availableCars": null
     },
     {
@@ -218,8 +218,8 @@
         "longitude": 13.36962
       },
       "arrival": "2017-12-16T09:27:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1801,
-      "drivingTimeText": "30 mins",
+      "drivingTimeFromPreviousStationInSeconds": 1279,
+      "drivingTimeText": "21 mins",
       "availableCars": null
     },
     {
@@ -230,8 +230,8 @@
       },
       "arrival": "2017-12-16T09:40:00+01:00",
       "departure": "2017-12-16T09:42:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 725,
-      "drivingTimeText": "12 mins",
+      "drivingTimeFromPreviousStationInSeconds": 543,
+      "drivingTimeText": "9 mins",
       "availableCars": null
     },
     {
@@ -242,8 +242,8 @@
       },
       "arrival": "2017-12-16T09:46:00+01:00",
       "departure": "2017-12-16T09:49:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 751,
-      "drivingTimeText": "13 mins",
+      "drivingTimeFromPreviousStationInSeconds": 466,
+      "drivingTimeText": "8 mins",
       "availableCars": null
     },
     {
@@ -254,8 +254,8 @@
       },
       "arrival": "2017-12-16T10:10:00+01:00",
       "departure": "2017-12-16T10:11:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 2406,
-      "drivingTimeText": "40 mins",
+      "drivingTimeFromPreviousStationInSeconds": 2095,
+      "drivingTimeText": "35 mins",
       "availableCars": null
     },
     {
@@ -266,8 +266,8 @@
       },
       "arrival": "2017-12-16T10:23:00+01:00",
       "departure": "2017-12-16T10:23:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1610,
-      "drivingTimeText": "27 mins",
+      "drivingTimeFromPreviousStationInSeconds": 1497,
+      "drivingTimeText": "25 mins",
       "availableCars": null
     },
     {
@@ -278,8 +278,8 @@
       },
       "arrival": "2017-12-16T10:32:00+01:00",
       "departure": "2017-12-16T10:33:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1003,
-      "drivingTimeText": "17 mins",
+      "drivingTimeFromPreviousStationInSeconds": 900,
+      "drivingTimeText": "15 mins",
       "availableCars": null
     },
     {
@@ -290,8 +290,8 @@
       },
       "arrival": "2017-12-16T10:45:00+01:00",
       "departure": "2017-12-16T10:46:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1556,
-      "drivingTimeText": "26 mins",
+      "drivingTimeFromPreviousStationInSeconds": 1337,
+      "drivingTimeText": "22 mins",
       "availableCars": null
     },
     {
@@ -302,8 +302,8 @@
       },
       "arrival": "2017-12-16T10:57:00+01:00",
       "departure": "2017-12-16T11:01:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 1359,
-      "drivingTimeText": "23 mins",
+      "drivingTimeFromPreviousStationInSeconds": 1271,
+      "drivingTimeText": "21 mins",
       "availableCars": null
     },
     {
@@ -350,8 +350,8 @@
       },
       "arrival": "2017-12-16T11:30:00+01:00",
       "departure": "2017-12-16T11:31:00+01:00",
-      "drivingTimeFromPreviousStationInSeconds": 798,
-      "drivingTimeText": "13 mins",
+      "drivingTimeFromPreviousStationInSeconds": 669,
+      "drivingTimeText": "11 mins",
       "availableCars": null
     }
   ],
