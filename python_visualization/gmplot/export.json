@@ -1,0 +1,368 @@
+{
+  "train_route": [
+    {
+      "name": "Bad Homburg",
+      "coordinates": {
+        "latitude": 50.220009,
+        "longitude": 8.621347
+      },
+      "arrival": "2017-12-16T04:14:00+01:00",
+      "departure": "2017-12-16T04:15:00+01:00"
+    },
+    {
+      "name": "Oberursel(Taunus)",
+      "coordinates": {
+        "latitude": 50.198687,
+        "longitude": 8.587791
+      },
+      "arrival": "2017-12-16T04:18:00+01:00",
+      "departure": "2017-12-16T04:19:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 455,
+      "drivingTimeText": "8 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Oberursel-Stierstadt",
+      "coordinates": {
+        "latitude": 50.185203,
+        "longitude": 8.584788
+      },
+      "arrival": "2017-12-16T04:21:00+01:00",
+      "departure": "2017-12-16T04:21:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 329,
+      "drivingTimeText": "5 mins",
+      "availableCars": null
+    },
+    {
+      "name": "OberurselWeißkirchen/Steinbach",
+      "coordinates": {
+        "latitude": 50.173831,
+        "longitude": 8.586838
+      },
+      "arrival": "2017-12-16T04:22:00+01:00",
+      "departure": "2017-12-16T04:23:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 184,
+      "drivingTimeText": "3 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Frankfurt-Rödelheim",
+      "coordinates": {
+        "latitude": 50.124517,
+        "longitude": 8.607028
+      },
+      "arrival": "2017-12-16T04:27:00+01:00",
+      "departure": "2017-12-16T04:27:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 707,
+      "drivingTimeText": "12 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Frankfurt(Main)West",
+      "coordinates": {
+        "latitude": 50.119204,
+        "longitude": 8.639326
+      },
+      "arrival": "2017-12-16T04:30:00+01:00",
+      "departure": "2017-12-16T04:30:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 605,
+      "drivingTimeText": "10 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Frankfurt(Main)Messe",
+      "coordinates": {
+        "latitude": 50.112013,
+        "longitude": 8.643434
+      },
+      "arrival": "2017-12-16T04:32:00+01:00",
+      "departure": "2017-12-16T04:32:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 133,
+      "drivingTimeText": "2 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Frankfurt(M)Galluswarte",
+      "coordinates": {
+        "latitude": 50.104767,
+        "longitude": 8.644
+      },
+      "arrival": "2017-12-16T04:33:00+01:00",
+      "departure": "2017-12-16T04:34:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 165,
+      "drivingTimeText": "3 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Frankfurt Hbf (tief)",
+      "coordinates": {
+        "latitude": 50.107347,
+        "longitude": 8.662761
+      },
+      "arrival": "2017-12-16T04:36:00+01:00",
+      "departure": "2017-12-16T04:37:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 211,
+      "drivingTimeText": "4 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Frankfurt(Main)Hbf",
+      "coordinates": {
+        "latitude": 50.106817,
+        "longitude": 8.662994
+      },
+      "departure": "2017-12-16T05:06:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 2,
+      "drivingTimeText": "1 min",
+      "availableCars": null
+    },
+    {
+      "name": "Hanau Hbf",
+      "coordinates": {
+        "latitude": 50.120912,
+        "longitude": 8.929246
+      },
+      "arrival": "2017-12-16T05:20:00+01:00",
+      "departure": "2017-12-16T05:21:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 1600,
+      "drivingTimeText": "27 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Fulda",
+      "coordinates": {
+        "latitude": 50.554794,
+        "longitude": 9.684169
+      },
+      "arrival": "2017-12-16T06:02:00+01:00",
+      "departure": "2017-12-16T06:04:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 3175,
+      "drivingTimeText": "53 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Kassel-Wilhelmshöhe",
+      "coordinates": {
+        "latitude": 51.312998,
+        "longitude": 9.446845
+      },
+      "arrival": "2017-12-16T06:34:00+01:00",
+      "departure": "2017-12-16T06:36:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 4400,
+      "drivingTimeText": "1 hour 13 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Göttingen",
+      "coordinates": {
+        "latitude": 51.536758,
+        "longitude": 9.926249
+      },
+      "arrival": "2017-12-16T06:54:00+01:00",
+      "departure": "2017-12-16T06:55:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 2674,
+      "drivingTimeText": "45 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Hildesheim Hbf",
+      "coordinates": {
+        "latitude": 52.160169,
+        "longitude": 9.952272
+      },
+      "arrival": "2017-12-16T07:35:00+01:00",
+      "departure": "2017-12-16T07:37:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 3667,
+      "drivingTimeText": "1 hour 1 min",
+      "availableCars": null
+    },
+    {
+      "name": "Braunschweig Hbf",
+      "coordinates": {
+        "latitude": 52.252128,
+        "longitude": 10.540427
+      },
+      "arrival": "2017-12-16T07:59:00+01:00",
+      "departure": "2017-12-16T08:01:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 2378,
+      "drivingTimeText": "40 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Wolfsburg Hbf",
+      "coordinates": {
+        "latitude": 52.429495,
+        "longitude": 10.787748
+      },
+      "arrival": "2017-12-16T08:17:00+01:00",
+      "departure": "2017-12-16T08:19:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 1707,
+      "drivingTimeText": "28 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Berlin-Spandau",
+      "coordinates": {
+        "latitude": 52.533787,
+        "longitude": 13.200965
+      },
+      "arrival": "2017-12-16T09:12:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 7394,
+      "drivingTimeText": "2 hours 3 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Berlin Hbf",
+      "coordinates": {
+        "latitude": 52.524924,
+        "longitude": 13.36962
+      },
+      "arrival": "2017-12-16T09:27:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 1279,
+      "drivingTimeText": "21 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Berlin Hbf (tief)",
+      "coordinates": {
+        "latitude": 52.52585,
+        "longitude": 13.368883
+      },
+      "arrival": "2017-12-16T09:40:00+01:00",
+      "departure": "2017-12-16T09:42:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 543,
+      "drivingTimeText": "9 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Berlin Gesundbrunnen",
+      "coordinates": {
+        "latitude": 52.548656,
+        "longitude": 13.39106
+      },
+      "arrival": "2017-12-16T09:46:00+01:00",
+      "departure": "2017-12-16T09:49:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 466,
+      "drivingTimeText": "8 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Oranienburg",
+      "coordinates": {
+        "latitude": 52.754697,
+        "longitude": 13.249084
+      },
+      "arrival": "2017-12-16T10:10:00+01:00",
+      "departure": "2017-12-16T10:11:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 2095,
+      "drivingTimeText": "35 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Löwenberg(Mark)",
+      "coordinates": {
+        "latitude": 52.89679,
+        "longitude": 13.190025
+      },
+      "arrival": "2017-12-16T10:23:00+01:00",
+      "departure": "2017-12-16T10:23:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 1497,
+      "drivingTimeText": "25 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Gransee",
+      "coordinates": {
+        "latitude": 53.001056,
+        "longitude": 13.16712
+      },
+      "arrival": "2017-12-16T10:32:00+01:00",
+      "departure": "2017-12-16T10:33:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 900,
+      "drivingTimeText": "15 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Fürstenberg(Havel)",
+      "coordinates": {
+        "latitude": 53.186791,
+        "longitude": 13.139371
+      },
+      "arrival": "2017-12-16T10:45:00+01:00",
+      "departure": "2017-12-16T10:46:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 1337,
+      "drivingTimeText": "22 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Neustrelitz Hbf",
+      "coordinates": {
+        "latitude": 53.359249,
+        "longitude": 13.074523
+      },
+      "arrival": "2017-12-16T10:57:00+01:00",
+      "departure": "2017-12-16T11:01:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 1271,
+      "drivingTimeText": "21 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Blankensee(Meckl)",
+      "coordinates": {
+        "latitude": 53.408141,
+        "longitude": 13.26299
+      },
+      "arrival": "2017-12-16T11:11:00+01:00",
+      "departure": "2017-12-16T11:11:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 1408,
+      "drivingTimeText": "23 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Cammin(Meckl)",
+      "coordinates": {
+        "latitude": 53.438983,
+        "longitude": 13.299765
+      },
+      "arrival": "2017-12-16T11:15:00+01:00",
+      "departure": "2017-12-16T11:15:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 660,
+      "drivingTimeText": "11 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Burg Stargard(Meckl)",
+      "coordinates": {
+        "latitude": 53.499562,
+        "longitude": 13.303127
+      },
+      "arrival": "2017-12-16T11:22:00+01:00",
+      "departure": "2017-12-16T11:22:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 677,
+      "drivingTimeText": "11 mins",
+      "availableCars": null
+    },
+    {
+      "name": "Neubrandenburg",
+      "coordinates": {
+        "latitude": 53.561893,
+        "longitude": 13.261381
+      },
+      "arrival": "2017-12-16T11:30:00+01:00",
+      "departure": "2017-12-16T11:31:00+01:00",
+      "drivingTimeFromPreviousStationInSeconds": 669,
+      "drivingTimeText": "11 mins",
+      "availableCars": null
+    }
+  ],
+  "car_route": {
+    "distance": {
+      "text": "665 km",
+      "value": 664582
+    },
+    "duration": {
+      "text": "6 hours 52 mins",
+      "value": 24704
+    }
+  }
+}

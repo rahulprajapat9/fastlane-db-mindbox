@@ -1,6 +1,9 @@
+import gmplot
+
 import time
 import json, pandas, numpy
 from datetime import datetime
+from pandas import Series
 
 with open("export.json") as json_data:
     routes = json.load(json_data)
@@ -37,23 +40,36 @@ routes_df['medium'] = numpy.where(
     'train'
 )
 
-routes_df.to_csv('output/export.csv', encoding='utf-8')
+gmap = gmplot.GoogleMapPlotter(51, 9, 9)
 
-convert_to_json = 1
-if convert_to_json:
-    result_json = []
-    for i in range(routes_df.shape[0]):
-        row = routes_df.iloc[i]
-        newRow = {
-            "lat": row['latitude'],
-            "long": row['longitude'],
-            "time": row['train_duration'],
-            "medium": row['medium'],
-        }
-        result_json.append(newRow)
+latitudes = Series.tolist(routes_df['latitude'])
+longitudes = Series.tolist(routes_df['longitude'])
 
-    print result_json
+latitudes_marker = [latitudes[0],latitudes[-1]]
+longitudes_marker = [longitudes[0],longitudes[-1]]
 
-    filename = 'output/best_path.json'
-    with open(filename, 'w') as outfile:
-        json.dump(result_json, outfile)
+gmap.plot(latitudes, longitudes, 'blue', edge_width=6)
+
+
+
+latitudes_car = []
+longitudes_car = []
+for i in range(routes_df.shape[0]):
+    if routes_df.iloc[i]['medium'] == 'car':
+        latitudes_car.append(routes_df.iloc[i - 1]['latitude'])
+        latitudes_car.append(routes_df.iloc[i]['latitude'])
+        longitudes_car.append(routes_df.iloc[i - 1]['longitude'])
+        longitudes_car.append(routes_df.iloc[i]['longitude'])
+
+        gmap.plot(latitudes_car, longitudes_car, 'yellow', edge_width=6)
+
+        latitudes_car = []
+        longitudes_car = []
+
+gmap.scatter(latitudes, longitudes, '#3B0B39', size=800, marker=False)
+gmap.scatter(latitudes_marker, longitudes_marker, 'r', marker=True)
+
+#gmap.scatter(latitudes, longitudes, 'k', marker=True)
+#gmap.heatmap(latitudes, longitudes)
+
+gmap.draw("mymap.html")
