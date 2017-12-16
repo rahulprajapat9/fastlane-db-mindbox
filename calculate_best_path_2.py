@@ -5,6 +5,8 @@ from datetime import datetime
 with open("export.json") as json_data:
     routes = json.load(json_data)
 
+routes = routes['train_route']
+
 routes_raw = pandas.DataFrame.from_dict(routes, orient='columns', dtype=None)
 
 routes_lat_long = pandas.DataFrame.from_dict(routes_raw['coordinates'].to_dict(), orient='index', dtype=None)
