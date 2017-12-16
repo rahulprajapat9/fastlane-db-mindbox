@@ -2,7 +2,7 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var url = require('url')
 
-var myPythonScriptPath = './calculate_best_path_2.py';
+var myPythonScriptPath = './calculate_best_path_3.py';
 var PythonShell = require('python-shell');
 
 var Collector = require('./main');
@@ -26,7 +26,14 @@ app.get('/route', function (req, res) {
 
     // getRawData("Bad Homburg", "Neubrandenburg", "now").then(result => pretty(result)).catch(console.error)
 
-    Collector.getRawData(start, destination, departure).then(result => {
+    parsedInt = parseInt(departure);
+
+    console.log(parsedInt);
+
+    Collector.getRawData(start, destination, parsedInt).then(result => {
+
+        console.log(JSON.stringify(result));
+
         var pyshell = new PythonShell(myPythonScriptPath);
         pyshell.send(JSON.stringify(result));
 
