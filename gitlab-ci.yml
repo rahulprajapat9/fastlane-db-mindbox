@@ -1,0 +1,10 @@
+domploy:
+  environment: dom
+  script:
+    - docker-compose pull
+    - docker-compose down
+    - docker-compose up -d
+    - sleep 20
+    - docker-compose logs
+  tags: [dom]
+  only: [master]

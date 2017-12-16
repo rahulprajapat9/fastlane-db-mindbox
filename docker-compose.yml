@@ -1,0 +1,18 @@
+version: '3'
+services:
+  fastlane:
+    container_name: fastlane
+    image: fl3/fastlane
+    labels:
+     - "traefik.enable=true"
+     - "traefik.backend=hubanner"
+     - "traefik.frontend.rule=Host:fastlane.beevelop.com"
+     - "traefik.port=8080"
+     - "traefik.docker.network=traefik_default"
+    networks: [traefik]
+    restart: unless-stopped
+
+networks:
+  traefik:
+    external:
+      name: traefik_default
