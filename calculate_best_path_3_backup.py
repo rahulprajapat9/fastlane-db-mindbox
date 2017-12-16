@@ -152,19 +152,6 @@ if convert_to_json:
         }
         result_json.append(newRow)
 
-    # Faking the waling :
-    newRow = {
-        "src": row['name'],
-        "dst": row['name'],
-        "lat": row['latitude'],
-        "long": row['longitude'],
-        "departure": row['departure'],
-        "arrival": row['arrival'],
-        "medium": row['medium'],
-        "time": row['value'],
-    }
-    result_json.append(newRow)
-
     print result_json
 
     filename = 'output/best_path_combined.json'
