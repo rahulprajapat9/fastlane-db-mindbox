@@ -1,3 +1,14 @@
+docker_image:
+  stage: build
+  image: reg.beevelop.com/dind
+  script:
+    - docker login -u $DOCKER_USER -p $DOCKER_PASS reg.beevelop.com
+    - docker build --pull=true --no-cache=true -t reg.beevelop.com/dbmindbox/fastlane-server .
+    - docker push reg.beevelop.com/dbmindbox/fastlane-server
+    - docker rmi reg.beevelop.com/dbmindbox/fastlane-server
+  only: [master]
+  tags: [dind]
+
 domploy:
   environment: dom
   script:
