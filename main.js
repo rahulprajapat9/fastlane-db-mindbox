@@ -5,6 +5,8 @@ const got = require('got-retry')
 const geolib = require('geolib')
 const moment = require('moment')
 const utf8 = require('utf8')
+const json = require('./cities.json')
+const fs = require('fs')
 
 const google_key = 'AIzaSyD3f1jXRREEX4pSowzDvdQ-K6eJDYh6s6w'
 const db_key = 'Bearer 22f25a853aaa0539ba5a91f7363775f7'
@@ -20,8 +22,7 @@ let getStation = (location) => {
       return geolib.getDistance({
         latitude: location.coordinates.lat,
         longitude: location.coordinates.lng
-      },
-        loc.coordinates)
+      }, loc.coordinates)
     })
   }).then(result => result[0])
 }
@@ -76,14 +77,14 @@ let getCarData = (journey) => {
   })
   return Promise.resolve(pairs).map(part => {
     return getCarRoute(part.origin.coordinates, part.destination.coordinates,
-    moment(part.departure).unix()).then(route => {
-      let carRoute = {
-        "from": part.origin.name,
-        "to": part.destination.name,
-        "car_route": route,
-      }
-      return carRoute
-    })
+      moment(part.departure).unix()).then(route => {
+        let carRoute = {
+          "from": part.origin.name,
+          "to": part.destination.name,
+          "car_route": route,
+        }
+        return carRoute
+      })
   })
 }
 
@@ -92,9 +93,12 @@ let aggregate = (start, end, departure_time) => {
   return hafas.journeys(start.id, end.id, {
     passedStations: true,
     results: 10,
-    when: moment(departure_time).toDate(),
+    when: moment.unix(departure_time).toDate(),
     transfers: 20
   }).then(result => {
+    if (typeof result === 'undefined' || result === null) {
+      return Promise.resolve(null)
+    }
     let journey = result[0]
     return Promise.all([getTrainData(journey),
     getCarData(journey)]).spread((traindata, cardata) => {
@@ -108,9 +112,12 @@ let aggregate = (start, end, departure_time) => {
 
 
 let getRawData = (origin, destination, departure_time) => {
-  return got.get(`https://maps.googleapis.com/maps/api/directions/json\?origin\=${encodeURIComponent(origin)}\&destination\=${destination}\&transit_mode\=train\&mode\=transit\&key\=${google_key}`, {
+  return got.get(`https://maps.googleapis.com/maps/api/directions/json\?origin\=${encodeURIComponent(origin)}\&destination\=${encodeURIComponent(destination)}\&transit_mode\=train\&mode\=transit\&key\=${google_key}`, {
     json: true
   }).then(result => {
+    if (typeof result.body === 'undefined' || result.body === null || result.body.status !== 'OK') {
+      return null
+    }
     let start = {
       "coordinates": result.body.routes[0].legs[0].start_location,
       "name": result.body.routes[0].legs[0].start_address
@@ -149,4 +156,25 @@ let getSteps = (journey) => {
   return Promise.resolve(_(result).flattenDeep().uniqBy('coordinates').value())
 }
 
-getRawData("Bad Homburg", "Neubrandenburg", Math.floor(1513420630986)).then(result => pretty(result)).catch(console.error)
+getRawData("Bad Homburg", "Neubrandenburg", 1513588457).then(result => pretty(result)).catch(console.error)
+
+/*let cities = []
+json.map((obj) => {
+  if (obj.country === 'DE') {
+    cities.push(obj.name)
+  }
+})
+
+cities.map((obj, idx) => {
+  if (idx > 0) {
+    getRawData(obj, cities[idx - 1], Math.floor(1513420630986)).then(result => {
+      let out = { "from": obj, "to": cities[idx - 1], "result": result }
+      pretty(out)
+      fs.appendFile('data.json', JSON.stringify(out), (err) => {
+        if (err) throw err;
+        console.log('The "data to append" was appended to file!');
+      });
+    }).catch(console.error)
+  }
+})*/
+
