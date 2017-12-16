@@ -2,7 +2,7 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var url = require('url')
 
-var myPythonScriptPath = './calculate_best_path_2.py';
+var myPythonScriptPath = './calculate_best_path_3.py';
 var PythonShell = require('python-shell');
 
 var Collector = require('./main');

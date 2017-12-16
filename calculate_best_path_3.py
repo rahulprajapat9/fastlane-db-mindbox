@@ -3,10 +3,12 @@ import json, pandas, numpy
 from datetime import datetime
 from pandas import Series
 
-with open("export.json") as json_data:
-    routes_json = json.load(json_data)
+#with open("../export.json") as json_data:
+#    routes = json.load(json_data)
+lines = sys.stdin.readlines()
+routes = json.loads(lines[0])
 
-routes = routes_json['train_route']
+routes = routes['train_route']
 
 routes_raw = pandas.DataFrame.from_dict(routes, orient='columns', dtype=None)
 col_names = list(routes_raw)
@@ -73,7 +75,7 @@ routes_df['medium'] = numpy.where(
     'train'
 )
 
-routes_df.to_csv('output/export3.csv', encoding='utf-8')
+# routes_df.to_csv('output/export3.csv', encoding='utf-8')
 
 # train routes : convert to json
 convert_to_json = 1
@@ -97,9 +99,9 @@ if convert_to_json:
 
     #print result_json
 
-    filename = 'output/best_path.json'
-    with open(filename, 'w') as outfile:
-        json.dump(result_json, outfile)
+#    filename = 'output/best_path.json'
+#    with open(filename, 'w') as outfile:
+#        json.dump(result_json, outfile)
 
 # Adding suggested car routes
 car_routes = routes_json['suggested_car_routes']
@@ -132,7 +134,7 @@ combined['medium'] = numpy.where(
     'train'
 )
 
-combined.to_csv('output/combined.csv', encoding='utf-8')
+# combined.to_csv('output/combined.csv', encoding='utf-8')
 
 # train + car combined json output
 convert_to_json = 1
@@ -152,8 +154,8 @@ if convert_to_json:
         }
         result_json.append(newRow)
 
-    print result_json
+    print(result_json)
 
-    filename = 'output/best_path_combined.json'
-    with open(filename, 'w') as outfile:
-        json.dump(result_json, outfile)
+#    filename = 'output/best_path_combined.json'
+#    with open(filename, 'w') as outfile:
+#        json.dump(result_json, outfile)

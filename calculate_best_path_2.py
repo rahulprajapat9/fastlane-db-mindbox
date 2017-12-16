@@ -9,7 +9,6 @@ lines = sys.stdin.readlines()
 routes = json.loads(lines[0])
 routes = routes['train_route']
 
-routes = routes['train_route']
 
 routes_raw = pandas.DataFrame.from_dict(routes, orient='columns', dtype=None)
 
